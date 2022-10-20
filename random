@@ -1,0 +1,2 @@
+# Copy files with a gz extension from all subdirectories to a new location
+cp **/*.gz <new location>
