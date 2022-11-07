@@ -1,2 +1,5 @@
 # Copy files with a gz extension from all subdirectories to a new location
 cp **/*.gz <new location>
+
+# Adds extension to a list
+for name in $(cat <directory>/list.txt); do echo $name.fa; done
