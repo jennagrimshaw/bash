@@ -3,3 +3,6 @@ cp **/*.gz <new location>
 
 # Adds extension to a list
 for name in $(cat <directory>/list.txt); do echo $name.fa; done
+
+# Copy files from list adding extension
+for name in $(cat /<directory>/list.txt); do cp ${name}_rm.bed /<directory>/bedfiles/.; done
