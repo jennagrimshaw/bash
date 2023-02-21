@@ -1,0 +1,12 @@
+#!/bin/bash
+#SBATCH --job-name=<jobname>
+#SBATCH --output=%x.o%j
+#SBATCB –-error=%x.e%j
+#SBATCH --partition=xlquanah
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=36
+#SBATCH --time=336:00:00
+#SBATCH --account=xlquanah
+
+# If you get the error: The 'default' account cannot access the 'xlquanah' partition.
+# You forgot line #9
