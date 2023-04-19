@@ -6,3 +6,6 @@ for name in $(cat <directory>/list.txt); do echo $name.fa; done
 
 # Copy files from list adding extension
 for name in $(cat /<directory>/list.txt); do cp ${name}_rm.bed /<directory>/bedfiles/.; done
+
+# TO USE SED ON MAC you must use dumb empty single quotes
+ sed -i '' "s|oldstring|newstring|g" oldfiles.txt 
