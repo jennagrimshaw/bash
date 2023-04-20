@@ -9,3 +9,6 @@ for name in $(cat /<directory>/list.txt); do cp ${name}_rm.bed /<directory>/bedf
 
 # TO USE SED ON MAC you must use dumb empty single quotes
  sed -i '' "s|oldstring|newstring|g" oldfiles.txt 
+ 
+ # To delete ALL LINES THAT CONTAIN A STRING ON MAC
+  sed -i ' ' "/usda=fastimcoal=USDA=boots=old=/d" oldfiles.txt
